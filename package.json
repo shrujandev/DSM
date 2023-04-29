@@ -13,8 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.3.2",
     "ganache-cli": "^6.12.2",
-    "web3": "^1.9.0",
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "web3": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0"
   }
 }
