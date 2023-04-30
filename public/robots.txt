@@ -1,0 +1,3 @@
+#tells search engine crawlers which URLs the crawler can access on the site
+User-agent: *
+Disallow:

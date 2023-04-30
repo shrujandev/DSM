@@ -1,7 +1,9 @@
 const { settings } = require("cluster");
 const Web3 = require("web3");
+const path = require("path");
 
 module.exports = {
+  contracts_build_directory: path.join(__dirname, "../src/contracts"),
   networks: {
     development: {
       host: "127.0.0.1",
@@ -19,11 +21,6 @@ module.exports = {
         },
       }
     }
-  },
-  demo: {
-    host: "eth",
-    port: 7545,
-    network_id: "*"
   },
   production: {
     provider: new Web3.providers.HttpProvider(process.env.REACT_APP_ETH_URL),
