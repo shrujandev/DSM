@@ -15,7 +15,7 @@ contract HashStorage is Ownable{
 
     event HashAdded(string ipfsHash, string fileHash, uint dateAdded);
 
-    constructor () public {
+    constructor () public{
         owner = msg.sender;
     }
 

@@ -1,5 +1,5 @@
 import { Web3Context } from "components/Web3Provider";
-import HashStorageContract from "contracts/HashStorage.json";
+import HashStorageContract from "build/contracts/HashStorage.json";
 import { useContext, useEffect, useState } from "react";
 import { EthContract, HashStorageEthContract, RawEthContract } from "types";
 
