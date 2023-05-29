@@ -78,7 +78,7 @@
   "sourceMap": "69:661:2:-;;;254:57;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;285:5:2;:18;;-1:-1:-1;;;;;;285:18:2;293:10;285:18;;;69:661;;;;;;",
   "deployedSourceMap": "69:661:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:661:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;93:20;;;:::i;:::-;;;;-1:-1:-1;;;;;93:20:2;;;;;;;;;;;;;;635:92;;;:::i;:::-;;;;;;;;;;;;;;;;;;413:214;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;413:214:2;-1:-1:-1;;;;;413:214:2;;:::i;:::-;;93:20;;;-1:-1:-1;;;;;93:20:2;;:::o;635:92::-;675:4;713:5;-1:-1:-1;;;;;713:5:2;699:10;:19;;635:92::o;413:214::-;359:9;:7;:9::i;:::-;351:34;;;;;-1:-1:-1;;;351:34:2;;;;;;;;;;;;-1:-1:-1;;;351:34:2;;;;;;;;;;;;;;;-1:-1:-1;;;;;494:22:2;;486:53;;;;;-1:-1:-1;;;486:53:2;;;;;;;;;;;;-1:-1:-1;;;486:53:2;;;;;;;;;;;;;;;576:5;;;555:37;;-1:-1:-1;;;;;555:37:2;;;;576:5;;;555:37;;;603:5;:16;;-1:-1:-1;;;;;;603:16:2;-1:-1:-1;;;;;603:16:2;;;;;;;;;;413:214::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract Ownable {\r\n    address public owner;\r\n\r\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\r\n\r\n    mapping(address => bool) admins;\r\n\r\n    constructor() public{\r\n        owner = msg.sender;\r\n    }\r\n\r\n    modifier onlyOwner() {\r\n        require(isOwner(),\"Access Denied\");\r\n        _;\r\n    }\r\n\r\n    function transferOwnership(address newOwner) public onlyOwner {\r\n        require(newOwner != address(0),\"Invalid new address\");\r\n        emit OwnershipTransferred(owner, newOwner);\r\n        owner = newOwner;\r\n    }\r\n\r\n    function isOwner() public view returns (bool) {\r\n        return msg.sender == owner ;\r\n    }\r\n}",
-  "sourcePath": "C:\\Users\\kavin\\OneDrive\\Desktop\\College stuff\\sem 6\\BC\\DSM\\contracts\\Ownable.sol",
+  "sourcePath": "D:\\College\\Semester 6\\BC\\Project\\DSM\\contracts\\Ownable.sol",
   "ast": {
     "absolutePath": "project:/contracts/Ownable.sol",
     "exportedSymbols": {
@@ -1957,7 +1957,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-05-01T13:33:01.731Z",
+  "updatedAt": "2023-05-01T16:06:48.803Z",
   "devdoc": {
     "methods": {}
   },

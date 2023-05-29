@@ -38,7 +38,7 @@
   "sourceMap": "69:187:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:187:3;;;;;;;",
   "deployedSourceMap": "69:187:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:187:3;;;;;;;;;;;;;;;;;;;;;;;;119:56;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;119:56:3;;:::i;:::-;;181:72;;;:::i;:::-;;;;;;;;;;;;;;;;119:56;155:10;:14;119:56::o;181:72::-;218:4;237:10;181:72;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract SimpleStorage {\r\n  uint storedData;\r\n\r\n  function write(uint x) public{\r\n    storedData = x;\r\n  }\r\n\r\n  function read() public view returns (uint){\r\n    return storedData;\r\n  }\r\n}\r\n",
-  "sourcePath": "C:\\Users\\kavin\\OneDrive\\Desktop\\College stuff\\sem 6\\BC\\DSM\\contracts\\SimpleStorage.sol",
+  "sourcePath": "D:\\College\\Semester 6\\BC\\Project\\DSM\\contracts\\SimpleStorage.sol",
   "ast": {
     "absolutePath": "project:/contracts/SimpleStorage.sol",
     "exportedSymbols": {
@@ -601,12 +601,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x8FF2023CE0B0260df0b308eEd853A070c01A14cf",
-      "transactionHash": "0x5b47710e1946c10b97edb1ff0e752b538db8b746dc0e67f166a399143963c3a2"
+      "address": "0x2BD78bEDF4BFa4436d3ba30A5E992E5342e99d32",
+      "transactionHash": "0xd7e1cf66b246077e530f45b25843f2c9ea999815ed319655eac279dc06f03578"
     }
   },
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-05-01T13:33:04.099Z",
+  "updatedAt": "2023-05-01T16:06:50.023Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

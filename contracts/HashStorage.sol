@@ -18,7 +18,7 @@ contract HashStorage is Ownable{
     constructor () public{
         owner = msg.sender;
     }
-
+    
     function add(string memory _ipfsHash, string memory _fileHash, string memory _fileName, string memory _fileType, uint _dateAdded) public onlyOwner {
         require(collection[_fileHash].exist == false, "[E1] This hash already exists in contract.");
         DocInfo memory docInfo = DocInfo(_ipfsHash, _fileName, _fileType, _dateAdded, true);
