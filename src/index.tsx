@@ -5,6 +5,9 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "reportWebVitals";
 import "styles/styles.scss";
 
+
+
+
 ReactDOM.render(
     <React.StrictMode>
         <Web3Provider>

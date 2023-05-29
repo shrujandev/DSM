@@ -7,7 +7,11 @@
     "test": "test"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "react-scripts start",
+=======
+    "start": "react-scripts --openssl-legacy-provider start && node server.ts",
+>>>>>>> da537cb840ff3d67e39cbd3dcdd4767eb000dc5a
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +25,8 @@
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.3.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "ganache-cli": "^6.12.2",
     "ipfs-cli": "^0.16.0",
     "lite-server": "^2.3.0",
@@ -35,7 +41,9 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/cors": "^2.8.13",
     "@types/crypto-js": "^4.0.1",
+    "@types/express": "^4.17.17",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
